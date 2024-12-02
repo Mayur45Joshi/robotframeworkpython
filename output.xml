@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-11-25T15:33:28.477328" rpa="false" schemaversion="5">
+<suite id="s1" name="Variables" source="D:\STUDY AUTO\Selenium with python\Robot frmework\Testcases\variables.robot">
+<test id="s1-t1" name="TC1" line="76">
+<kw name="Launchbrowser" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-25T15:33:28.726429" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-25T15:33:28.726429" elapsed="7.769776"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.496205" elapsed="0.045766"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-11-25T15:33:36.555653" level="INFO">${title} = Test Login | Practice Test Automation</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.541971" elapsed="0.013682"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2024-11-25T15:33:36.555653" elapsed="0.000000"/>
+</return>
+<msg time="2024-11-25T15:33:36.555653" level="INFO">${pagetitle} = Test Login | Practice Test Automation</msg>
+<var>${pagetitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-11-25T15:33:28.726429" elapsed="7.829224"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.555653" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-25T15:33:36.555653" level="INFO">Test Login | Practice Test Automation</msg>
+<arg>${pagetitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.555653" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-25T15:33:36.563663" level="INFO">Typing text 'mercury' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>mercury</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.555653" elapsed="0.203086"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-25T15:33:36.759608" level="INFO">Typing text 'admin' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-25T15:33:36.759608" elapsed="0.159786"/>
+</kw>
+<status status="PASS" start="2024-11-25T15:33:28.726429" elapsed="8.192965"/>
+</test>
+<status status="PASS" start="2024-11-25T15:33:28.480315" elapsed="8.439079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Variables">Variables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
